@@ -10,7 +10,7 @@
   "scripts": {
     "typecheck": "tsc --noEmit --strict --erasableSyntaxOnly --target es2022 --module nodenext --moduleResolution nodenext --allowImportingTsExtensions --skipLibCheck --types node src/money.ts src/money.test.ts",
     "test:money": "node --test src/money.test.ts",
-    "test:sql": "node --test db/tests/subscription.test.mjs db/tests/roles.test.mjs db/tests/money_sql.test.mjs db/tests/issue.test.mjs",
+    "test:sql": "node --test db/tests/subscription.test.mjs db/tests/roles.test.mjs db/tests/money_sql.test.mjs db/tests/issue.test.mjs db/tests/drafts.test.mjs",
     "test": "npm run typecheck && npm run test:money && npm run test:sql"
   },
   "devDependencies": {
